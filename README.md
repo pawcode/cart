@@ -1,3 +1,4 @@
-# Paw Cart Library
+[![Build Status](https://github.com/pawcode/cart/workflows/Yii2%20CI/badge.svg)](https://github.com/pawcode/cart/actions)
 
-[![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
+# Paw Cart Library
+Under development ...
