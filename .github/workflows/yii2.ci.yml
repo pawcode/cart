@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Yii2 CI
 
 on: 
   push:
@@ -17,7 +17,7 @@ jobs:
       run: composer validate
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
+      run: composer install
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
