@@ -12,6 +12,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    
+    - uses: shivammathur/setup-php@v1
+      with:
+        php-version: '7.2'  
+        coverage: xdebug
 
     - name: Validate composer.json and composer.lock
       run: composer validate
@@ -23,4 +28,4 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: composer run-script ci
+      run: composer run-script ci:c
