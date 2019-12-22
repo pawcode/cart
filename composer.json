@@ -40,7 +40,9 @@
             "open tests/_output/coverage/index.html"
         ]
     },
-    "require": {},
+    "require": {
+        "yiisoft/yii2": "^2.0"
+    },
     "require-dev": {
         "codeception/codeception": "^3.1",
         "phpstan/phpstan": "^0.11.19",
