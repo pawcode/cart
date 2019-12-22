@@ -1,0 +1,3 @@
+parameters:
+    autoload_files:
+        - %rootDir%/../../yiisoft/yii2/Yii.php

@@ -1,0 +1,49 @@
+{
+    "name": "pawcode/cart",
+    "description": "Cart Library",
+    "type": "paw-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mlaxwong",
+            "email": "mlaxwong@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "pawcode\\cart\\": "src/",
+            "pawcode\\cart\\tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "codecept": "@php vendor/bin/codecept run",
+        "codecept:c": "@php vendor/bin/codecept run unit --coverage --coverage-xml --coverage-html",
+        "phpstan": "@php vendor/bin/phpstan analyse src --level=7",
+        "phpcs": "@php vendor/bin/phpcs",
+        "ci": [
+            "@codecept",
+            "@phpstan",
+            "@phpcs"
+        ],
+        "ci:c": [
+            "@codecept:c",
+            "@phpstan",
+            "@phpcs"
+        ],
+        "ci:co": [
+            "@codecept:c",
+            "@phpstan",
+            "@phpcs",
+            "open tests/_output/coverage/index.html"
+        ]
+    },
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^3.1",
+        "phpstan/phpstan": "^0.11.19",
+        "squizlabs/php_codesniffer": "^3.5"
+    }
+}
