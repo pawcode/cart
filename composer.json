@@ -18,6 +18,20 @@
             "pawcode\\cart\\tests\\": "tests/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pawcode/core"
+        }
+    ],
+    "require": {
+        "pawcode/core": "@dev"
+    },
+    "require-dev": {
+        "codeception/codeception": "^3.1",
+        "phpstan/phpstan": "^0.11.19",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
     "scripts": {
         "codecept": "@php vendor/bin/codecept run",
         "codecept:c": "@php vendor/bin/codecept run unit --coverage --coverage-xml --coverage-html",
@@ -39,13 +53,5 @@
             "@phpcs",
             "open tests/_output/coverage/index.html"
         ]
-    },
-    "require": {
-        "yiisoft/yii2": "^2.0"
-    },
-    "require-dev": {
-        "codeception/codeception": "^3.1",
-        "phpstan/phpstan": "^0.11.19",
-        "squizlabs/php_codesniffer": "^3.5"
     }
 }
